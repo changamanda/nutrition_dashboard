@@ -1,7 +1,5 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import SomeComponent from './components/some_component';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Dashboard from './components/dashboard';
 
-// ReactDOM.render(<SomeComponent />, document.getElementById('some-id'));
-
-console.log('herro');
+ReactDOM.render(<Dashboard />, document.getElementById('app'));

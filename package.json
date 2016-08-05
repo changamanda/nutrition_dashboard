@@ -12,9 +12,11 @@
     "debug": "~2.2.0",
     "ejs": "~2.3.3",
     "express": "~4.13.1",
+    "googlemaps": "^1.11.1",
     "morgan": "~1.6.1",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
+    "react-google-maps": "^4.11.0",
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {

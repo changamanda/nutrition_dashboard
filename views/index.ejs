@@ -2,12 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title><%= title %></title>
-    <!-- BOOTSWATCH -->
+    <title>SuccessBoard</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://bootswatch.com/simplex/bootstrap.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1><%= title %></h1>
+    <h1>SuccessBoard</h1>
+    <div id="app">
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%= process.env.NUTRITION_GOOGLE %>&libraries=places"></script>
     <script src="/javascripts/bundle.js"></script>
   </body>
 </html>
