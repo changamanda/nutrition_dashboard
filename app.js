@@ -8,6 +8,7 @@ var dotEnv = require('dotenv').config();
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var boards = require('./routes/boards');
 
 var app = express();
 
@@ -26,8 +27,20 @@ app.use(express.static(path.join(__dirname, 'public')));
 var mongoose = require('mongoose');
 mongoose.connect(process.env.NUTRITION_DB);
 
+// SEED SECTION
+// var Board = require('./models/board');
+// var board = new Board({
+//   lat: 30.45,
+//   lng: 90.23,
+//   zoom: 4,
+//   query: "USA"
+// });
+// board.save();
+
 app.use('/', routes);
 app.use('/users', users);
+app.use('/boards', boards);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

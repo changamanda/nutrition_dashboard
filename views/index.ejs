@@ -10,10 +10,14 @@
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1>SuccessBoard</h1>
     <div id="app">
     </div>
     <script src="https://maps.googleapis.com/maps/api/js?key=<%= process.env.NUTRITION_GOOGLE %>&libraries=places"></script>
+    <% if (typeof(board) !== 'undefined'){ %>
+    <script>
+      window.board = <%- JSON.stringify(board) %>;
+    </script>
+    <% } %>
     <script src="/javascripts/bundle.js"></script>
   </body>
 </html>
