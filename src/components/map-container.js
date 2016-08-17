@@ -75,7 +75,7 @@ class MapContainer extends React.Component {
     var marker = new google.maps.Marker({
       map: map,
       position: place.geometry.location,
-      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+      icon: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png'
     });
     var markers = this.state.markers;
     markers.push(marker);
