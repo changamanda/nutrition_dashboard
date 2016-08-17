@@ -45,7 +45,7 @@ class Dashboard extends React.Component {
       }
     })
     .done((response) => {
-      window.location = 'http://' + window.location.host + '/' + response._id;
+      window.location = 'https://' + window.location.host + '/' + response._id;
     })
   }
   _changeLatLng(newLat, newLng){
