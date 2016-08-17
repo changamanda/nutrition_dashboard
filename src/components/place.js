@@ -14,7 +14,18 @@ class Place extends React.Component {
   }
   _handleClick(event){
     event.preventDefault();
-    this.props.showDetailsDisplay();
+
+    $.ajax({
+      url: '/place-info',
+      method: 'POST',
+      data: { placeId: this.props.data.place_id }
+    })
+    .done(function(response){
+      var info = JSON.parse(response);
+      window.open(info.result.website);
+    })
+
+    this.refs.name.blur();
     this.props.changeCurrentPlace(this.props.data);
   }
   render() {
