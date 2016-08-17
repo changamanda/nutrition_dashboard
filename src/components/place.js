@@ -3,15 +3,14 @@ import React from 'react';
 class Place extends React.Component {
   constructor(props){
     super(props);
-    this.state = { favorited: false };
   }
   _toggleFavorite(event){
     event.preventDefault();
     this.refs.star.blur();
-    this.setState({ favorited: !this.state.favorited });
+    this.props.toggleStarred(this.props.id);
   }
   _faClassName(){
-    return this.state.favorited ? "fa fa-star" : "fa fa-star-o";
+    return this.props.starred.includes(this.props.id) ? "fa fa-star" : "fa fa-star-o";
   }
   _handleClick(event){
     event.preventDefault();
