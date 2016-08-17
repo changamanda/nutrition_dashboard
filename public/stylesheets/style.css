@@ -1,7 +1,10 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: url('https://hd.unsplash.com/photo-1429591444377-330b363f2215');
+  background: url('https://hd.unsplash.com/photo-1429591444377-330b363f2215') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -51,4 +54,10 @@ h1 {
 
 .fa-refresh, .fa-star-o, .fa-star, .fa-floppy-o {
   margin-left: 1%;
+}
+
+@media (max-width: 992px) {
+  .place-list{
+    margin-top: 1%;
+  }
 }

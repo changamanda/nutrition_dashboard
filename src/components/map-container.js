@@ -111,7 +111,7 @@ class MapContainer extends React.Component {
             <div id='map'>
             </div>
           </div>
-          <div className='col-md-4'>
+          <div className='place-list col-md-4'>
             <PlacesList showDetailsDisplay={ this._showDetailsDisplay.bind(this) } changeCurrentPlace={ this._changeCurrentPlace.bind(this) } places={ this.props.places } toggleStarred={ this.props.toggleStarred } starred={ this.props.starred } />
           </div>
         </div>
